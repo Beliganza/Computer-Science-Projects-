@@ -1,0 +1,79 @@
+Green Southwest;Location510,798;Adjacent vertices:Robinson/Collis,Green South,Green West,Green Center,Green East
+Green Southeast;Location647,793;Adjacent vertices:Green South,Green East,New Hamp,Green Center
+Green Center;Location576,711;Adjacent vertices:Green East,Green West,Green Southeast,Green Southwest,Green Northeast,Green Northwest
+Green Northeast;Location636,619;Adjacent vertices:Rauner,Green North,Green East,Wentworth,Green Center
+Green Northwest;Location503,622;Adjacent vertices:Sanborn,Green North,North Mass,Green West,Green Center,Baker,Green East
+Green West;Location503,710;Adjacent vertices:Robinson/Collis,Green Center,South Mass,Green Northwest,Green Southwest
+Green East;Location641,707;Adjacent vertices:Green Center,Green Southeast,Green Northeast,Green Southwest,Green Northwest,Observatory Rd
+Observatory Rd;Location809,751;Adjacent vertices:Gym,New Hamp,North Fayerweather,Green East
+XH;Location932,705;Adjacent vertices:Gym,East Wheelock
+Gym;Location873,725;Adjacent vertices:XH,Observatory Rd,Fayerweather
+New Hamp;Location739,773;Adjacent vertices:Observatory Rd,Green Southeast
+Green North;Location570,618;Adjacent vertices:Green Northeast,Green Northwest,Baker
+Green South;Location580,798;Adjacent vertices:Green Southeast,Green Southwest
+Fayerweather;Location844,644;Adjacent vertices:North Fayerweather,Gym
+East Wheelock;Location993,687;Adjacent vertices:XH,Brace
+Brace;Location958,623;Adjacent vertices:East Wheelock
+Blunt;Location423,508;Adjacent vertices:Butterfield,Baker West,North Mass
+Baker West;Location496,504;Adjacent vertices:Sanborn,Blunt,Carson
+Sanborn;Location498,560;Adjacent vertices:Baker West,Green Northwest,Baker,North Mass
+Butterfield;Location359,509;Adjacent vertices:Gold Coast,Blunt,FDA
+Gold Coast;Location295,509;Adjacent vertices:Tuck Dr,Butterfield
+Tuck Dr;Location240,509;Adjacent vertices:Gold Coast,Buchanan
+Buchanan;Location178,509;Adjacent vertices:Tuck Dr,Thayer,Tuck,Murdough
+Tuck;Location116,487;Adjacent vertices:Murdough,Buchanan
+Thayer;Location127,548;Adjacent vertices:Murdough,Cummings,Buchanan
+Murdough;Location84,523;Adjacent vertices:Tuck,Thayer,Cummings,Buchanan
+Cummings;Location86,589;Adjacent vertices:Thayer,Murdough
+Carson;Location495,413;Adjacent vertices:Rocky,Kemeny,Berry,Baker West
+Rocky;Location421,389;Adjacent vertices:FDA,Carson
+FDA;Location365,374;Adjacent vertices:Bones Gate,Rocky,Butterfield
+Bones Gate;Location314,358;Adjacent vertices:FDA,KDE
+KDE;Location262,337;Adjacent vertices:Bones Gate,AXA
+AXA;Location205,321;Adjacent vertices:KDE,AQ
+Kemeny;Location499,333;Adjacent vertices:Choate House,Carson
+Rauner;Location637,556;Adjacent vertices:Green Northeast,Wheeler,Baker,Richardson
+Wheeler;Location646,485;Adjacent vertices:Steele,Rauner,Wilder,Berry
+Wilder;Location730,477;Adjacent vertices:Richardson,Steele,Wheeler
+Steele;Location681,434;Adjacent vertices:Wheeler,Wilder,Fairchild,Parker House
+Richardson;Location725,533;Adjacent vertices:Wilder,Wentworth,Rauner
+Wentworth;Location727,606;Adjacent vertices:North Fayerweather,Richardson,Green Northeast
+Fairchild;Location729,381;Adjacent vertices:Burke,Steele
+Burke;Location775,327;Adjacent vertices:Sudikoff,Bildner,Fairchild
+Sudikoff;Location736,288;Adjacent vertices:McLaughlin,Raven,Burke,Parker House
+Raven;Location696,251;Adjacent vertices:Goldstein,Sudikoff,Moore,Parker House
+Choate House;Location535,269;Adjacent vertices:LALACS,Kemeny,Choates
+LALACS;Location568,220;Adjacent vertices:Sherman,Choate House
+Sherman;Location595,177;Adjacent vertices:LALACS,Rope Ferry,Moore
+Moore;Location644,213;Adjacent vertices:Sherman,Raven
+Rope Ferry;Location625,129;Adjacent vertices:Sherman,Dicks House
+Dicks House;Location657,81;Adjacent vertices:11 Rope Ferry,Rope Ferry
+11 Rope Ferry;Location686,46;Adjacent vertices:Dicks House
+Bildner;Location819,280;Adjacent vertices:Gilman,Burke
+Gilman;Location858,233;Adjacent vertices:Dana,Bildner,McLaughlin,Kellogg
+Dana;Location901,206;Adjacent vertices:Gilman,Traffic Light,LSC West,LSC East
+Traffic Light;Location975,183;Adjacent vertices:LSC East,Dana,LSC West
+LSC North;Location936,71;Adjacent vertices:LSC East,LSC West
+LSC West;Location924,121;Adjacent vertices:LSC North,Traffic Light,Dana
+LSC East;Location960,115;Adjacent vertices:LSC North,Traffic Light,Dana
+AQ;Location126,255;Adjacent vertices:DDD,AXA
+DDD;Location187,211;Adjacent vertices:Roth Center,AQ
+Roth Center;Location231,167;Adjacent vertices:DDD
+Choates;Location409,217;Adjacent vertices:Dean's House,Choate House
+Dean's House;Location350,142;Adjacent vertices:Choates
+McLaughlin;Location767,247;Adjacent vertices:Sudikoff,Gilman
+Kellogg;Location807,135;Adjacent vertices:Gilman,Goldstein
+Observatory;Location787,541;Adjacent vertices:North Fayerweather,Dragon
+Bema;Location918,529;Adjacent vertices:North Fayerweather
+North Fayerweather;Location780,608;Adjacent vertices:Wentworth,Observatory,Fayerweather,Observatory Rd,Bema
+Dragon;Location856,331;Adjacent vertices:Observatory
+Baker;Location567,519;Adjacent vertices:Rauner,Sanborn,Green North,Green Northwest
+Berry;Location577,419;Adjacent vertices:Carson,Wheeler,Parker House
+Parker House;Location649,313;Adjacent vertices:Raven,Sudikoff,Steele,Berry
+Goldstein;Location722,207;Adjacent vertices:Raven,Kellogg,37 Dewey Field
+37 Dewey Field;Location752,96;Adjacent vertices:Goldstein
+North Mass;Location426,603;Adjacent vertices:Mid Mass,Green Northwest,Sanborn,Blunt
+South Mass;Location430,717;Adjacent vertices:1953 Commons,Mid Mass,Green West
+Mid Mass;Location426,657;Adjacent vertices:North Mass,South Mass
+1953 Commons;Location429,747;Adjacent vertices:South Mass,Robinson/Collis
+Robinson/Collis;Location480,753;Adjacent vertices:Green West,1953 Commons,Green Southwest
