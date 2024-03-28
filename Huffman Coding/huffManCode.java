@@ -2,12 +2,7 @@
 import java.io.*;
 import java.util.*;
 
-/**
- * Compress and decompress files
- *
- * @author Pacifique Mucyo, Dartmouth College, Fall 2023
- * @author Ganza Belyse Aloyse, Dartmouth College, Fall 2023
- */
+
 
 public class huffManCode implements Huffman {
 
