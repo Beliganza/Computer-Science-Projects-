@@ -1,0 +1,16 @@
+post mbesa "Ganza" "Things Fall Apart" "A classic novel by Chinua Achebe." "classic,literature" "1958-01-01T00:00:00Z"
+post mbesa "Mbesa" "Half of a Yellow Sun" "A novel set during the Nigerian Civil War." "drama,history" "2006-10-10T12:00:00Z"
+
+comment mbesa mbesa.Things_Fall_Apart "Chimamanda" "This novel changed my perspective."
+comment mbesa mbesa.Things_Fall_Apart "Wole" "A timeless masterpiece."
+show mbesa
+
+post africabook "Ngozi" "Americanah" "A modern take on race and identity." "contemporary,fiction" "2013-05-15T08:30:00Z"
+post africabook "Kofi" "Season of Migration to the North" "An insightful journey into post-colonial Africa." "postcolonial,literature" "1966-09-20T14:45:00Z"
+comment africabook africabook.Season_of_Migration_to_the_North "Chinelo" "A profound exploration of identity and belonging."
+show africabook
+
+delete africabook africabook.Americanah "Ngozi" "2025-03-07T12:00:00Z"
+show africabook
+
+quit

@@ -1,0 +1,286 @@
+Welcome to Blogpost App!
+Available commands: post, comment, delete, show, find, quit
+Command > Post 'Things Fall Apart' inserted into blog 'mbesa'.
+Command > Post 'Half of a Yellow Sun' inserted into blog 'mbesa'.
+Command > Command > Comment added by 'Chimamanda' with permalink: mbesa.Things_Fall_Apart
+Command > Comment added by 'Wole' with permalink: mbesa.Things_Fall_Apart
+Command > Posts in blog 'mbesa':
+--------------------------------------------------
+Title: Things Fall Apart
+User: Ganza
+Tags: classic,literature
+Timestamp: 1958-01-01T00:00:00Z
+Permalink: mbesa.Things_Fall_Apart
+Content:
+  A classic novel by Chinua Achebe.
+ ----------------------------------------
+  User: Chimamanda
+  Permalink: mbesa.Things_Fall_Apart
+  Comment:
+    This novel changed my perspective.
+ ----------------------------------------
+  User: Wole
+  Permalink: mbesa.Things_Fall_Apart
+  Comment:
+    A timeless masterpiece.
+ ----------------------------------------
+  User: Chimamanda
+  Permalink: mbesa.Things_Fall_Apart
+  Comment:
+    This novel changed my perspective.
+ ----------------------------------------
+  User: Wole
+  Permalink: mbesa.Things_Fall_Apart
+  Comment:
+    A timeless masterpiece.
+ ----------------------------------------
+  User: Chimamanda
+  Permalink: mbesa.Things_Fall_Apart
+  Comment:
+    This novel changed my perspective.
+ ----------------------------------------
+  User: Wole
+  Permalink: mbesa.Things_Fall_Apart
+  Comment:
+    A timeless masterpiece.
+ ----------------------------------------
+  User: Chimamanda
+  Permalink: mbesa.Things_Fall_Apart
+  Comment:
+    This novel changed my perspective.
+ ----------------------------------------
+  User: Wole
+  Permalink: mbesa.Things_Fall_Apart
+  Comment:
+    A timeless masterpiece.
+--------------------------------------------------
+Title: Half of a Yellow Sun
+User: Mbesa
+Tags: drama,history
+Timestamp: 2006-10-10T12:00:00Z
+Permalink: mbesa.Half_of_a_Yellow_Sun
+Content:
+  A novel set during the Nigerian Civil War.
+--------------------------------------------------
+Title: Things Fall Apart
+User: Ganza
+Tags: classic,literature
+Timestamp: 1958-01-01T00:00:00Z
+Permalink: mbesa.Things_Fall_Apart
+Content:
+  A classic novel by Chinua Achebe.
+--------------------------------------------------
+Title: Half of a Yellow Sun
+User: Mbesa
+Tags: drama,history
+Timestamp: 2006-10-10T12:00:00Z
+Permalink: mbesa.Half_of_a_Yellow_Sun
+Content:
+  A novel set during the Nigerian Civil War.
+--------------------------------------------------
+Title: Things Fall Apart
+User: Ganza
+Tags: classic,literature
+Timestamp: 1958-01-01T00:00:00Z
+Permalink: mbesa.Things_Fall_Apart
+Content:
+  A classic novel by Chinua Achebe.
+--------------------------------------------------
+Title: Half of a Yellow Sun
+User: Mbesa
+Tags: drama,history
+Timestamp: 2006-10-10T12:00:00Z
+Permalink: mbesa.Half_of_a_Yellow_Sun
+Content:
+  A novel set during the Nigerian Civil War.
+--------------------------------------------------
+Title: Things Fall Apart
+User: Ganza
+Tags: classic,literature
+Timestamp: 1958-01-01T00:00:00Z
+Permalink: mbesa.Things_Fall_Apart
+Content:
+  A classic novel by Chinua Achebe.
+--------------------------------------------------
+Title: Half of a Yellow Sun
+User: Mbesa
+Tags: drama,history
+Timestamp: 2006-10-10T12:00:00Z
+Permalink: mbesa.Half_of_a_Yellow_Sun
+Content:
+  A novel set during the Nigerian Civil War.
+Command > Command > Post 'Americanah' inserted into blog 'africabook'.
+Command > Post 'Season of Migration to the North' inserted into blog 'africabook'.
+Command > Comment added by 'Chinelo' with permalink: africabook.Season_of_Migration_to_the_North
+Command > Posts in blog 'africabook':
+--------------------------------------------------
+Title: Americanah
+User: Ngozi
+Tags: contemporary,fiction
+Timestamp: 2025-03-07T12:00:00Z
+Permalink: africabook.Americanah
+Content:
+  deleted by Ngozi
+--------------------------------------------------
+Title: Season of Migration to the North
+User: Kofi
+Tags: postcolonial,literature
+Timestamp: 1966-09-20T14:45:00Z
+Permalink: africabook.Season_of_Migration_to_the_North
+Content:
+  An insightful journey into post-colonial Africa.
+ ----------------------------------------
+  User: Chinelo
+  Permalink: africabook.Season_of_Migration_to_the_North
+  Comment:
+    A profound exploration of identity and belonging.
+ ----------------------------------------
+  User: Chinelo
+  Permalink: africabook.Season_of_Migration_to_the_North
+  Comment:
+    A profound exploration of identity and belonging.
+ ----------------------------------------
+  User: Chinelo
+  Permalink: africabook.Season_of_Migration_to_the_North
+  Comment:
+    A profound exploration of identity and belonging.
+ ----------------------------------------
+  User: Chinelo
+  Permalink: africabook.Season_of_Migration_to_the_North
+  Comment:
+    A profound exploration of identity and belonging.
+--------------------------------------------------
+Title: Americanah
+User: Ngozi
+Tags: contemporary,fiction
+Timestamp: 2013-05-15T08:30:00Z
+Permalink: africabook.Americanah
+Content:
+  A modern take on race and identity.
+--------------------------------------------------
+Title: Season of Migration to the North
+User: Kofi
+Tags: postcolonial,literature
+Timestamp: 1966-09-20T14:45:00Z
+Permalink: africabook.Season_of_Migration_to_the_North
+Content:
+  An insightful journey into post-colonial Africa.
+--------------------------------------------------
+Title: Americanah
+User: Ngozi
+Tags: contemporary,fiction
+Timestamp: 2013-05-15T08:30:00Z
+Permalink: africabook.Americanah
+Content:
+  A modern take on race and identity.
+--------------------------------------------------
+Title: Season of Migration to the North
+User: Kofi
+Tags: postcolonial,literature
+Timestamp: 1966-09-20T14:45:00Z
+Permalink: africabook.Season_of_Migration_to_the_North
+Content:
+  An insightful journey into post-colonial Africa.
+--------------------------------------------------
+Title: Americanah
+User: Ngozi
+Tags: contemporary,fiction
+Timestamp: 2013-05-15T08:30:00Z
+Permalink: africabook.Americanah
+Content:
+  A modern take on race and identity.
+--------------------------------------------------
+Title: Season of Migration to the North
+User: Kofi
+Tags: postcolonial,literature
+Timestamp: 1966-09-20T14:45:00Z
+Permalink: africabook.Season_of_Migration_to_the_North
+Content:
+  An insightful journey into post-colonial Africa.
+Command > Command > Post with permalink 'africabook.Americanah' was deleted by 'Ngozi' at 2025-03-07T12:00:00Z
+Command > Posts in blog 'africabook':
+--------------------------------------------------
+Title: Americanah
+User: Ngozi
+Tags: contemporary,fiction
+Timestamp: 2025-03-07T12:00:00Z
+Permalink: africabook.Americanah
+Content:
+  deleted by Ngozi
+--------------------------------------------------
+Title: Season of Migration to the North
+User: Kofi
+Tags: postcolonial,literature
+Timestamp: 1966-09-20T14:45:00Z
+Permalink: africabook.Season_of_Migration_to_the_North
+Content:
+  An insightful journey into post-colonial Africa.
+ ----------------------------------------
+  User: Chinelo
+  Permalink: africabook.Season_of_Migration_to_the_North
+  Comment:
+    A profound exploration of identity and belonging.
+ ----------------------------------------
+  User: Chinelo
+  Permalink: africabook.Season_of_Migration_to_the_North
+  Comment:
+    A profound exploration of identity and belonging.
+ ----------------------------------------
+  User: Chinelo
+  Permalink: africabook.Season_of_Migration_to_the_North
+  Comment:
+    A profound exploration of identity and belonging.
+ ----------------------------------------
+  User: Chinelo
+  Permalink: africabook.Season_of_Migration_to_the_North
+  Comment:
+    A profound exploration of identity and belonging.
+--------------------------------------------------
+Title: Americanah
+User: Ngozi
+Tags: contemporary,fiction
+Timestamp: 2013-05-15T08:30:00Z
+Permalink: africabook.Americanah
+Content:
+  A modern take on race and identity.
+--------------------------------------------------
+Title: Season of Migration to the North
+User: Kofi
+Tags: postcolonial,literature
+Timestamp: 1966-09-20T14:45:00Z
+Permalink: africabook.Season_of_Migration_to_the_North
+Content:
+  An insightful journey into post-colonial Africa.
+--------------------------------------------------
+Title: Americanah
+User: Ngozi
+Tags: contemporary,fiction
+Timestamp: 2013-05-15T08:30:00Z
+Permalink: africabook.Americanah
+Content:
+  A modern take on race and identity.
+--------------------------------------------------
+Title: Season of Migration to the North
+User: Kofi
+Tags: postcolonial,literature
+Timestamp: 1966-09-20T14:45:00Z
+Permalink: africabook.Season_of_Migration_to_the_North
+Content:
+  An insightful journey into post-colonial Africa.
+--------------------------------------------------
+Title: Americanah
+User: Ngozi
+Tags: contemporary,fiction
+Timestamp: 2013-05-15T08:30:00Z
+Permalink: africabook.Americanah
+Content:
+  A modern take on race and identity.
+--------------------------------------------------
+Title: Season of Migration to the North
+User: Kofi
+Tags: postcolonial,literature
+Timestamp: 1966-09-20T14:45:00Z
+Permalink: africabook.Season_of_Migration_to_the_North
+Content:
+  An insightful journey into post-colonial Africa.
+Command > Command > Bloppost App is closing down. Until next time!
