@@ -1,0 +1,576 @@
+/* ============================
+   RESET + BASE
+   ============================ */
+
+/* Apply border-box sizing and strip default spacing */
+* {
+  box-sizing: border-box;    /* include padding/border in element’s width/height */
+  margin: 0;                 /* remove all default margins */
+  padding: 0;                /* remove all default padding */
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;   /* animate in-page jumps */
+}
+
+/* Base font, background and text color */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* primary typeface */
+  background-color: #0c0c0c; /* dark background */
+  color: #ffffff;            /* white default text */
+  line-height: 1.6;          /* improve readability */
+  margin: 0;                 /* reset body margin */
+  padding: 0;                /* reset body padding */
+}
+
+/* ============================
+   LEFT-SIDEBAR NAVIGATION
+   ============================ */
+
+/* Container for vertical nav on the left */
+nav.nav-horizontal {
+  display: flex;                   /* enable flex layout */
+  flex-direction: column;          /* stack links vertically */
+  justify-content: center;         /* center links vertically in sidebar */
+  align-items: center;             /* center links horizontally */
+  position: fixed;                 /* pin nav to viewport */
+  top: 0;                          /* align to top */
+  left: 0;                         /* align to left */
+  width: 200px;                    /* sidebar width */
+  height: 100vh;                   /* full viewport height */
+  padding: 4rem 1rem;              /* vertical + horizontal padding */
+  background-color: #312450;       /* match page background */
+  border-right: 1px solid #6c2069; /* line on the right */
+  z-index: 1000;                   /* sit above other content */
+}
+
+/* Styling for each nav link */
+nav.nav-horizontal a {
+  display: block;              /* full-width clickable area */
+  width: 100%;                 /* span entire sidebar */
+  text-align: right;          /* center link text */
+  color: #c9c7c4;              /*link color */
+  text-decoration: none;       /* remove underline */
+  border-bottom: 1px solid #682555;/* gold underline below nav */
+  font-weight: 600;            /* semi-bold */
+  font-size: 1rem;          /* larger link text */
+  letter-spacing: 0.5px;       /* subtle letter spacing */
+  margin: 1rem 0;            /* vertical spacing between links */
+  transition: color 0.3s ease; /* smooth hover color change */
+}
+
+/* Hover state for links */
+nav.nav-horizontal a:hover {
+  color: #ffffff;              /* switch to white on hover */
+}
+
+/* Push main content right so it isn’t hidden under the sidebar */
+body {
+  margin-left: 200px;          /* offset by sidebar width */
+}
+
+/* ============================
+   INTRO SECTION
+   ============================ */
+
+/* Wrapper for intro block, fills entire first viewport */
+.intro-content {
+  display: flex;                /* flex for centering */
+  flex-direction: column;       /* stack items vertically */
+  justify-content: center;      /* center items vertically */
+  align-items: center;          /* center items horizontally */
+  text-align: center;           /* center all text */
+  height: 100vh;                /* full viewport height */
+  width: calc(100% - 200px);    /* full width minus sidebar */
+  padding: 0 2rem;              /* horizontal padding */
+  background-color: #5e42a6;    /* match background */
+  box-sizing: border-box;       /* include padding in width */
+}
+
+/* Reset margin on the greeting wrapper */
+.tag {
+  margin: 0;                    /* remove default margins */
+}
+
+/* Rotating greeting text */
+.dynamic-text {
+  font-size: 1.6rem;            /* greeting font size */
+  color: #90732a;               /* gold color */
+  font-weight: 700;             /* bold */
+  letter-spacing: 0.2em;        /* spaced letters */
+  position: relative;           /* anchor for pseudo-element */
+  margin: 0;                    /* reset margin */
+  font-family: cursive;
+}
+
+/* Blinking cursor after the greeting */
+.dynamic-text::after {
+  content: '|';                 /* cursor character */
+  position: absolute;           /* position relative to text */
+  right: -0.2ch;                /* just to the right of text */
+  animation: blink 0.7s step-end infinite; /* blinking effect */
+}
+
+/* “Welcome to my portfolio” with lines on each side */
+.intro-content h2 {
+  display: flex;                /* flex for pseudo-elements */
+  align-items: center;          /* vertical alignment */
+  text-transform: uppercase;
+  font-size: 3rem;              /* heading size */
+  margin: 0;                    /* remove default margin */
+  font-family: Georgia, serif;
+}
+
+
+/* Supporting paragraph below your name */
+.intro-paragraph {
+  font-size: 1.7rem;            /* paragraph size */
+  line-height: 1.6;             /* line spacing */
+  max-width: 600px;             /* max line length */
+  margin: 0;                    /* reset margin */
+  color:#c9c7c4;               /* white text */
+  font-family: serif;
+  align-items: left;          /* vertical alignment */
+}
+
+/* Blink animation keyframes for the cursor */
+@keyframes blink {
+  0%, 100% { opacity: 1; }      /* visible at start & end */
+  50%      { opacity: 0; }      /* hidden halfway */
+}
+
+.about-photo {
+  width: 60vw;       /* 60% of the viewport width */
+  max-width: 800px;  /* but never grow beyond 800px */
+  aspect-ratio: 1;   /* maintain a 1:1 ratio for perfect circle */
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  margin-top: 2.5rem;
+}
+
+
+
+/* ============================
+   ABOUT ME SECTION
+   ============================ */
+#about {
+  /* Fill full viewport height under the sidebar */
+  height: 100vh;                /* full viewport height */
+  width: 100%;    /* full width minus sidebar */
+  /* Background & box model */
+  background-color: #4a2d54;      /* dark grey background */
+  box-sizing: border-box;         /* include padding in width */
+  
+  /* Center content vertically + horizontally */
+  display: flex;                  
+  flex-direction: column;         
+  justify-content: center;        
+  align-items: center;            
+  
+  /* Internal spacing */
+  padding:0 2rem;                  
+}
+
+/* Heading inside About */
+#about h2 {
+  color: #ffffff;                 /* gold title */
+  font-size: 2rem;                
+  margin-bottom: 1rem;
+  text-align: right;          
+}
+
+/* Paragraphs inside About */
+#about p {
+  color: #bbb9b7;                 
+  font-size: 1.2rem;                
+  line-height: 1.5rem;               
+  text-align: left;             
+  max-width: 800px;
+  font-family: Georgia, serif;
+  margin-bottom:2.5rem;
+                   
+}
+
+/* ============================
+   PROJECTS SECTION
+   ============================ */
+#portfolio {
+  /* Auto height, content-driven */
+  width: 100%;      /* fit under sidebar */
+  /* Center content vertically + horizontally */
+  display: flex;                  
+  flex-direction: column;         
+  justify-content: center;        
+  align-items: center;            
+  
+  /* Internal spacing */
+  padding:0 2rem; 
+  /* Box styling */
+               
+  padding:0 2rem;                  
+  background-color: #280729;      
+  border-radius: 10px;            
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;         
+  transition: transform 0.3s ease;
+}
+
+/* Hover lift for Projects */
+#portfolio:hover {
+  transform: translateY(-3px);    
+}
+
+/* Projects heading */
+#portfolio h2 {
+  color: #ffffff;                 
+  font-size: 2rem;                
+  margin-bottom: 1rem;            
+}
+
+/* List styling (if any) inside Projects */
+#portfolio ul {
+  list-style: disc inside;        
+  padding-left: 1rem;             
+}
+#portfolio li {
+  color: #e0dddd;              
+  margin-bottom: 0.8rem;          
+  line-height: 1.7;               
+}
+
+
+/* ============================
+   PROJECTS SECTION
+   ============================ */
+
+/* Grid container for your project cards */
+.project-grid {
+  display: grid;                        /* enable CSS grid */
+  grid-template-columns: repeat(2, 1fr);/* two equal columns */
+  gap: 2rem;                            /* space between cards */
+  width: calc(100% - 200px);            /* fit alongside sidebar */
+  margin: 4rem auto;                    /* vertical space & center */
+}
+
+/* Individual project card */
+.project-card {
+  display: flex;                        /* flex for image + text */
+  flex-direction: row;                  /* side-by-side layout */
+  width: 100%;                          /* fill grid cell */
+  height: 200px;                        /* fixed card height */
+  background-color: #361737;            /* black background */
+  border-radius: 20px;                  /* rounded corners */
+  overflow: hidden;                     /* clip overflow */
+  cursor: pointer;                      /* pointer on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* animate */
+  box-shadow: 0 8px 24px rgba(80, 79, 79, 0.2); /* card shadow */
+  color: #d1d1d1;                       /* white card text */
+}
+
+/* Project image on the left side */
+.project-card img {
+  width: 200px;                         /* fixed image width */
+  height: 100%;                         /* full card height */
+  object-fit: cover;                    /* cover & crop */
+  flex-shrink: 0;                       /* no shrinking */
+}
+
+/* Text container on the right side */
+.project-info {
+  display: flex;                        /* flex for centering */
+  flex-direction: column;               /* stack title + desc */
+  justify-content: center;              /* center vertically */
+  padding: 1rem;                        /* inner padding */
+  overflow: hidden;                     /* clip overflow */
+}
+
+/* Project title text */
+.project-info h3 {
+  font-size: 1.3rem;                    /* title size */
+  font-weight: 700;                     /* bold */
+  margin: 0 0 0.5rem 0;                 /* gap below title */
+}
+
+/* Project description text */
+.project-info p {
+  font-size: 1rem;                      /* description size */
+  color: #9a9898;                       /* light grey */
+  margin: 0;                            /* reset margin */
+  line-height: 1.4;                     /* line spacing */
+}
+
+/* Lift card & deepen shadow on hover */
+.project-card:hover {
+  transform: translateY(-5px);          /* lift up */
+  box-shadow: 0 12px 30px rgba(254, 250, 250, 0.21); /* stronger shadow */
+}
+
+/* ============================
+   RESUME SECTION
+   ============================ */
+#resume {
+  width: 100%;      /* fit under sidebar */
+  /* Center content vertically + horizontally */
+  display: flex;                  
+  flex-direction: column;         
+  justify-content: center;        
+  align-items: center;            
+  
+  /* Internal spacing */
+  padding:0 2rem; 
+  /* Box styling */
+               
+  padding:0 2rem;                  
+  background-color: #1f0721;      
+  border-radius: 10px;            
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;         
+  transition: transform 0.3s ease;
+}
+
+/* Hover lift for Resume */
+#resume:hover {
+  transform: translateY(-3px);    
+}
+
+/* Resume heading */
+#resume h2 {
+  color: #ffffff;                 
+  font-size: 2rem;                
+  margin-bottom: 1rem;            
+}
+
+/* ============================
+   CONTACT SECTION
+   ============================ */
+#contact {
+  width: 100%;               /* fit under sidebar */
+  height: 85vh;              /* fixed height */
+  display: flex;                  
+  flex-direction: column;         
+  justify-content: center;        
+  align-items: center;            
+  padding: 0 2rem;                  
+  background-color: #1f0721;      
+  border-radius: 10px;            
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;         
+  transition: transform 0.3s ease;       
+}
+
+/* Contact links */
+#contact a {
+  display: inline-block;          
+  color: #90732a;                 
+  font-weight: 500;               
+  font-size: 1rem;              
+  text-decoration: none;          
+  margin-top: 0.5rem;             
+}
+#contact a:hover {
+  text-decoration: underline;     
+}
+
+/* — Styles for each paragraph via its class — */
+
+/* Intro text */
+#contact .contact-intro {
+  margin-bottom: 1.5rem;    /* space below */
+  color: #cccccc;           /* light gray text */
+  font-size: 1.7rem;        /* paragraph size */
+  font-family: Georgia, serif;  
+  align-items: left;
+  max-width: 700px;
+}
+
+/* “Reach out on:” line */
+#contact .contact-cta {
+  margin-bottom: 1.5rem;    /* space below */
+  color: #ffffff;           
+  font-size: 1.7rem;        
+  font-family: Georgia, serif;  
+  align-items: left;
+  max-width: 700px;
+}
+
+/* Email line */
+#contact .contact-email {
+  margin-bottom: 0.5rem;    
+  color: #cccccc;           
+  font-size: 1rem;        
+  font-family: Georgia, serif;  
+  align-items: left;
+  max-width: 700px;
+}
+
+/* LinkedIn line */
+#contact .contact-linkedin {
+  margin-bottom: 1.5rem;    
+  color: #cccccc;           
+  font-size: 1rem;        
+  font-family: Georgia, serif;  
+  align-items: left;
+  max-width: 700px;
+}
+
+
+/* ============================
+   RESPONSIVE FALLBACK
+   ============================ */
+@media (max-width: 768px) {
+  /* Reset sidebar for small screens */
+  nav.nav-horizontal {
+    position: sticky;
+    top: 0; left: 0;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    border-right: none;
+    border-bottom: 1px solid #90732a;
+  }
+
+  /* Reset content widths */
+  body, 
+  #about, 
+  #portfolio, 
+  #resume, 
+  #contact {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+
+
+/* MODAL OVERLAYS */
+/* Full-screen, hidden by default */
+.modal {
+  display: none;               /* hide initially */
+  position: fixed;             /* cover entire viewport */
+  z-index: 2000;               /* top layer */
+  left: 0; top: 0;             /* align to top-left */
+  width: 100%; height: 100%;   /* full width & height */
+  overflow: auto;              /* scroll if content overflows */
+  background-color: rgba(0,0,0,0.8); /* dark translucent backdrop */
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: #fff;      /* white box */
+  margin: 10% auto;            /* center vertically with top offset */
+  padding: 2rem;               /* internal padding */
+  border-radius: 10px;         /* rounded corners */
+  max-width: 800px;            /* width limit */
+  color: #111;                 /* dark text inside */
+  position: relative;          /* for close button positioning */
+}
+
+/* Close button inside modal */
+.modal-content .close {
+  position: absolute;          /* overlaid on top-right */
+  top: 1rem;                   /* 1rem from top */
+  right: 1.5rem;               /* 1.5rem from right */
+  font-size: 2rem;             /* large “×” icon */
+  color: #888;                 /* medium grey */
+  cursor: pointer;             /* pointer on hover */
+}
+
+/* ============================
+   RESPONSIVE ADJUSTMENTS
+   ============================ */
+
+/* On narrower screens (<768px), revert to top nav & single-column cards */
+@media (max-width: 768px) {
+  /* Top horizontal nav */
+  nav.nav-horizontal {
+    position: sticky;                   /* sticky at top */
+    top: 0;                             /* align top */
+    left: auto;                         /* reset left */
+    width: 100%;                        /* full width */
+    height: auto;                       /* auto height */
+    flex-direction: row;                /* row layout */
+    justify-content: space-around;      /* spread links */
+    padding: 1.5rem 2rem;               /* normal padding */
+    border-right: none;                 /* remove right border */
+    border-bottom: 1px solid #90732a;   /* gold bottom border */
+  }
+
+  /* Reset content shift & width */
+  body,
+  .intro-content,
+  .project-grid {
+    margin-left: 0;                     /* no sidebar offset */
+    width: 100%;                        /* full width */
+  }
+
+  /* One-column project grid */
+  .project-grid {
+    grid-template-columns: 1fr;         /* single column */
+  }
+}
+
+/* --------------------------------------------------
+   FIX INTRO WIDTH (so the purple really fills to the
+   right edge, instead of leaving a black gap)
+   -------------------------------------------------- */
+.intro-content {
+  /* override the old calc(100% - 200px) which was
+     leaving 200px of body BG showing */
+  width: calc(100vw - 200px);    /* use viewport width minus sidebar */
+}
+
+
+/* ——————————————————————————————
+   Override: Animated Gradient for Intro Section
+   (Paste this at the very end of your CSS file)
+   —————————————————————————————— */
+
+.intro-content {
+  /* replace static bg with animated gradient */
+  background: linear-gradient(
+    45deg,
+    #721e68  0%,
+    #4a2d54 25%,
+    #5e42a6 100%,
+    #361737 75%,
+    #5e42a6 100%
+    
+  );
+  background-size: 400% 400%;         /* enlarge gradient for movement */
+  animation: gradientShift 15s ease infinite;  /* animate indefinitely */
+}
+
+@keyframes gradientShift {
+  0%   { background-position:   0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position:   0% 50%; }
+}
+
+
+/* Styled rectangular “Download CV” button */
+.btn-download-cv {
+  display: inline-block;               /* shrink to fit content + padding */
+  padding: 0.75rem 1.5rem;             /* top/bottom and left/right space */
+  border: 2px solid #90732a;           /* gold border matching your theme */
+  border-radius: 6px;                  /* slightly rounded corners */
+  background-color: transparent;       /* transparent by default */
+  color: #90732a;                      /* gold text */
+  font-weight: 600;                    /* semi-bold label */
+  text-decoration: none;               /* remove underline */
+  transition: 
+    background-color 0.3s ease, 
+    color 0.3s ease;                   /* smooth hover transition */
+}
+
+/* Hover state: invert colors */
+.btn-download-cv:hover {
+  background-color: #90732a;           /* gold background */
+  color: #ffffff;                      /* white text */
+}
+
+
+
